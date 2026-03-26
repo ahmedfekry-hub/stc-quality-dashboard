@@ -269,11 +269,11 @@ st.dataframe(pd.DataFrame(owner_rows), use_container_width=True, hide_index=True
 st.subheader("Recovery Action Tracker")
 actions = pd.DataFrame(
     [
-        ["Housekeeping / debris", "Western & Jeddah WOs", "Daily close-out checklist, foreman signoff, photo evidence", "0-14 days", "Site Ops + QA/QC"],
-        ["H&S non-compliance", "High-repeat WOs", "Mandatory toolbox talk, supervisor stop-work authority, surprise audits", "0-14 days", "HSE + Construction"],
-        ["Permit renewal gaps", "Permit coordinators", "Permit aging log, weekly renewal review, no-PO/no-work gate", "0-30 days", "Admin + PM"],
-        ["Property damage restoration", "Riyadh hotspot WOs", "Snag closure team, restoration checklist before WO closure", "0-30 days", "Construction + QA/QC"],
-        ["Repeat offender WOs", "Top 5 WOs", "Escalate to PM, hold payment / performance notice, daily recovery review", "Immediate", "Project Director"],
+        ["Housekeeping / debris", "Western & Jeddah WOs", "Daily close-out checklist, foreman signoff, photo evidence", "0-14 days", "Foreman + Site Supervisors + QA/QC"],
+        ["H&S non-compliance", "High-repeat WOs", "Mandatory toolbox talk, supervisor stop-work authority, surprise audits", "0-14 days", "Site Supervisors + QA/QC"],
+        ["Permit renewal gaps", "Permit coordinators", "Permit aging log, weekly renewal review, no-PO/no-work gate", "0-30 days", "Permit/Admin Lead + PM"],
+        ["Property damage restoration", "Riyadh hotspot WOs", "Snag closure team, restoration checklist before WO closure", "0-30 days", "Site Supervisors + QA/QC + Project Managers"],
+        ["Repeat offender WOs", "Top 5 WOs", "Escalate to PM, hold payment / performance notice, daily recovery review", "Immediate", "Project Managers"],
     ],
     columns=["Issue", "Focus Area", "Action", "Timeline", "Owner"]
 )
